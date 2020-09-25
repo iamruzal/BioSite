@@ -1,0 +1,173 @@
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 13;
+    color: #333;
+    background: pink;
+}
+
+*,
+*:before,
+*:after {
+
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 00;
+}
+
+/* container */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* intro */
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url("/images/purplebg.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro_inner {
+   width: 100%;
+   max-width: 860px;
+   margin: 0 auto;
+    text-align: center;
+
+}
+.intro_title {
+    font-size: 33px;
+    font-style: oblique;
+    font-weight: 700;
+    color: rebeccapurple;
+    text-align: center;
+    line-height: 1;
+
+}
+
+
+/* header */
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    height: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+/* nav */
+.nav {
+    font-size: 20px;
+}
+.nav_link {
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .4s linear;
+
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .4s linear;
+}
+
+.nav_link:hover {
+    color: black;
+}
+.nav_link:hover:after{
+    opacity: 1;
+}
+
+/* buttons */
+
+.btn {
+
+    vertical-align: top;
+    border: 3px solid #ffff;
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+    transition: background .4s linear, color .4s linear;
+
+}
+.btn:hover{
+    background-color:darkslateblue;
+    transition: opacity .4s linear;
+}
+
+
+/* section */
+
+.section {
+    padding: 90px 90px;
+
+}
+
+.section_header {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto 40px;
+    text-align: center;
+
+}
+
+.section_suptitle {
+
+    font-size: 24px;
+
+
+}
+
+
+.section_title {
+
+    font-style: oblique;
+    color: mediumpurple;
+    text-transform: uppercase;
+
+}
+
+.section_text {
+
+
+}
+
+
